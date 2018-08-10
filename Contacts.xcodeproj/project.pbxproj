@@ -11,7 +11,7 @@
 		B68F5411211DE21B00999BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68F540F211DE21B00999BBA /* Main.storyboard */; };
 		B68F5413211DE21E00999BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68F5412211DE21E00999BBA /* Assets.xcassets */; };
 		B68F5416211DE21E00999BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68F5414211DE21E00999BBA /* LaunchScreen.storyboard */; };
-		B68F5420211DE23600999BBA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68F541F211DE23600999BBA /* CloudKit.framework */; };
+		B68F5429211DE30500999BBA /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F5428211DE30500999BBA /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		B68F5415211DE21E00999BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B68F5417211DE21E00999BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B68F541D211DE23300999BBA /* Contacts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contacts.entitlements; sourceTree = "<group>"; };
-		B68F541F211DE23600999BBA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B68F5428211DE30500999BBA /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +30,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68F5420211DE23600999BBA /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +68,6 @@
 		B68F541E211DE23600999BBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B68F541F211DE23600999BBA /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,6 +99,7 @@
 		B68F5424211DE24100999BBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B68F5428211DE30500999BBA /* Contact.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68F5429211DE30500999BBA /* Contact.swift in Sources */,
 				B68F540C211DE21B00999BBA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
