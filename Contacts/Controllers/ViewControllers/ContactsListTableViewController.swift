@@ -40,13 +40,7 @@ class ContactsListTableViewController: UITableViewController {
         }
     }
     
-    
-    // MARK: - TableViewDataSource
-    // TODO: - Create a new section for each alphabet letter in contact list
-    //    override func numberOfSections(in tableView: UITableView) -> Int {
-    //        return 0
-    //    }
-    
+     // MARK: - TableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ContactController.shared.contacts.count
     }

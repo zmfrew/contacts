@@ -16,6 +16,7 @@
 		B6C9263F211DE7CC006F3B8F /* ContactsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9263E211DE7CC006F3B8F /* ContactsListTableViewController.swift */; };
 		B6C92641211DE7DB006F3B8F /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C92640211DE7DB006F3B8F /* ContactDetailViewController.swift */; };
 		B6C92643211DEEB5006F3B8F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C92642211DEEB5006F3B8F /* CloudKit.framework */; };
+		B6C92645211E0517006F3B8F /* ColorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C92644211E0517006F3B8F /* ColorGradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B6C9263E211DE7CC006F3B8F /* ContactsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListTableViewController.swift; sourceTree = "<group>"; };
 		B6C92640211DE7DB006F3B8F /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		B6C92642211DEEB5006F3B8F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B6C92644211E0517006F3B8F /* ColorGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		B68F5421211DE23A00999BBA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B6C92644211E0517006F3B8F /* ColorGradient.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				B68F5429211DE30500999BBA /* Contact.swift in Sources */,
 				B6C92641211DE7DB006F3B8F /* ContactDetailViewController.swift in Sources */,
 				B68F540C211DE21B00999BBA /* AppDelegate.swift in Sources */,
+				B6C92645211E0517006F3B8F /* ColorGradient.swift in Sources */,
 				B6C9263F211DE7CC006F3B8F /* ContactsListTableViewController.swift in Sources */,
 				B6C9263D211DE4DD006F3B8F /* ContactController.swift in Sources */,
 			);

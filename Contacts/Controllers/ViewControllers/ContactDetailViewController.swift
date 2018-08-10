@@ -21,6 +21,7 @@ class ContactDetailViewController: UIViewController {
     // MARK: - LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: .primaryColor, bottomColor: .secondaryColor)
         updateViews()
     }
     
