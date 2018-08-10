@@ -12,6 +12,7 @@
 		B68F5413211DE21E00999BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68F5412211DE21E00999BBA /* Assets.xcassets */; };
 		B68F5416211DE21E00999BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68F5414211DE21E00999BBA /* LaunchScreen.storyboard */; };
 		B68F5429211DE30500999BBA /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F5428211DE30500999BBA /* Contact.swift */; };
+		B6C9263D211DE4DD006F3B8F /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9263C211DE4DD006F3B8F /* ContactController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		B68F5417211DE21E00999BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B68F541D211DE23300999BBA /* Contacts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contacts.entitlements; sourceTree = "<group>"; };
 		B68F5428211DE30500999BBA /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		B6C9263C211DE4DD006F3B8F /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		B68F5426211DE24D00999BBA /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B6C9263C211DE4DD006F3B8F /* ContactController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				B68F5429211DE30500999BBA /* Contact.swift in Sources */,
 				B68F540C211DE21B00999BBA /* AppDelegate.swift in Sources */,
+				B6C9263D211DE4DD006F3B8F /* ContactController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
