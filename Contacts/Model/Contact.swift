@@ -23,7 +23,7 @@ class Contact {
     var email: String?
     
     // MARK: - CloudKit Properties
-    
+    var cloudKitRecordID: CKRecordID?
     
     // MARK: - Initializers
     init(name: String, phoneNumber: String?, email: String?) {
@@ -40,6 +40,16 @@ class Contact {
         self.name = name
         self.phoneNumber = phoneNumber
         self.email = email
+        self.cloudKitRecordID = ckRecord.recordID
+    }
+    
+}
+
+// MARK: - Equatable Conformance
+extension Contact: Equatable {
+    
+    static func ==(lhs: Contact, rhs: Contact) -> Bool {
+        return lhs.name == rhs.name && lhs.phoneNumber == rhs.phoneNumber && lhs.email == rhs.email && lhs.cloudKitRecordID == rhs.cloudKitRecordID
     }
     
 }
@@ -48,10 +58,13 @@ class Contact {
 extension CKRecord {
     
     convenience init(contact: Contact) {
+        let recordID = contact.cloudKitRecordID ?? CKRecordID(recordName: UUID().uuidString)
         self.init(recordType: Contact.typeKey)
         self.setValue(contact.name, forKey: Contact.nameKey)
         self.setValue(contact.phoneNumber, forKey: Contact.phoneNumberKey)
         self.setValue(contact.email, forKey: Contact.emailKey)
+        
+        contact.cloudKitRecordID = recordID
     }
     
 }

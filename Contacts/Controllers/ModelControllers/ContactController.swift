@@ -29,7 +29,7 @@ class ContactController {
                 completion(false)
                 return
             }
-            
+
             self.contacts.append(contact)
             completion(true)
         }
@@ -60,8 +60,11 @@ class ContactController {
         contact.email = email
         
         let contactRecord = CKRecord(contact: contact)
-        let operation = CKModifyRecordsOperation(recordsToSave: [contactRecord], recordIDsToDelete: nil)
         
+        guard let contactRecordID = contact.cloudKitRecordID else { completion(false) ; return }
+        
+        let operation = CKModifyRecordsOperation(recordsToSave: [contactRecord], recordIDsToDelete: [contactRecordID])
+        operation.recordIDsToDelete = [contactRecordID]
         operation.savePolicy = .changedKeys
         operation.queuePriority = .high
         operation.qualityOfService = .userInteractive
@@ -73,7 +76,20 @@ class ContactController {
     }
     
     func delete(contact: Contact, completion: @escaping (Bool) -> Void) {
-        // TODO: - Add cloudKitRecordID to implement delete functionality.
+        guard let recordID = contact.cloudKitRecordID else { completion(false) ; return }
+        
+        privateDB.delete(withRecordID: recordID) { (record, error) in
+            if let error = error {
+                print("Error occurred deleting contact: \(error.localizedDescription).")
+                completion(false)
+                return
+            }
+            
+            guard let contactIndex = self.contacts.index(of: contact) else { completion(false) ; return }
+            
+            self.contacts.remove(at: contactIndex)
+            completion(true)
+        }
     }
     
 }
